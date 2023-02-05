@@ -1,10 +1,65 @@
+@import url('https://fonts.cdnfonts.com/css/roboto');
+
+:root{
+  font-family: 'roboto';
+  
+}
+                
+
 body{
   margin: 0;
   padding: 0;
 }
-
+/*--styling for all header elements--*/
 header{
   background-color: #2197f3;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(150px, 15%) 1fr auto;
+  gap: 30px;
+}
+
+header > h2 {
+  text-align: center;
+  color: white;
+}
+
+.searchbar{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+form{
+  width: 100%;
+}
+
+#search{
+  width: 80%;
+  height: 50px;
+  font-size: large;
+  border: 1px transparent;
+  background-color: #2197f3;
+}
+
+#display-pic{
+  width: 50px;
+  height: 50px;
+  border: 2px inset white;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-info{
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  padding-right: 40px;
 }
 
 .grid-container{
